@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cositas Ricas</title>
+
+<link rel="stylesheet" href="css/stylos.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="imagenes/logo.jpg" alt="Cositas Ricas">
+    <h2>Cositas Ricas</h2>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#contacto">Contacto</a></li>   
+</ul>
+
+<div class="social-icons">
+    <a href="https://wa.me/543454962526" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/cositasricas.am/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</div>
+
+</nav>
+
+<header class="banner" id="inicio">
+
+<div class="banner-content">
+    <img src="imagenes/logo.jpg" class="banner-logo" alt="logo">
+
+    <h1>Cositas Ricas</h1>
+    <p>Postres caseros, tortas y mesas dulces para tus eventos ✨</p>
+    <p class="subtext">Hecho con amor • Calidad artesanal • Atención personalizada</p>
+
+    <button class="btn-banner" onclick="enviarWhatsApp()">
+        Pedir por WhatsApp
+    </button>
+</div>
+
+</header>
+
+<section id="servicios">
+<h2>Nuestros servicios</h2>
+
+<div class="carrusel-container">
+
+<button class="carrusel-btn" onclick="moverCarrusel(-1)">&#10094;</button>
+
+<div class="contenedor-servicios" id="carrusel">
+
+<div class="servicio">
+<div class="galeria">  
+<img src="imagenes/candy.jpg">
+<img src="imagenes/candydos.jpg">
+<img src="imagenes/candy3.jpg">
+</div>
+<h3>Candy Bar 🍬</h3>
+<p>Mesas dulces para eventos.</p>
+<button class="btn-servicio" onclick="enviarWhatsApp()">Consultar</button>
+</div>
+
+<div class="servicio">
+<div class="galeria">  
+<img src="imagenes/torta.jpg">
+<img src="imagenes/tortados.jpg">
+<img src="imagenes/tortatres.jpg">
+</div>
+<h3>Casamientos 💍</h3>
+<p>Tortas para tu día especial.</p>
+<button class="btn-servicio" onclick="enviarWhatsApp()">Consultar</button>
+</div>
+
+<div class="servicio">
+<div class="galeria">  
+<img src="imagenes/quince.jpeg">
+<img src="imagenes/quincedos.jpg">
+<img src="imagenes/quincetres.jpg">
+</div>
+<h3>15 años 🎉</h3>
+<p>Diseños únicos y modernos.</p>
+<button class="btn-servicio" onclick="enviarWhatsApp()">Consultar</button>
+</div>
+
+<div class="servicio">
+<div class="galeria">  
+<img src="imagenes/tematica.jpg">
+<img src="imagenes/tematimados.jpg">
+<img src="imagenes/tematicatres.jpg">
+</div>
+<h3>Cumpleaños 🎂</h3>
+<p>Diseños personalizados.</p>
+<button class="btn-servicio" onclick="enviarWhatsApp()">Consultar</button>
+</div>
+
+</div>
+
+<button class="carrusel-btn" onclick="moverCarrusel(1)">&#10095;</button>
+
+</div>
+</section>
+
+<section class="confianza">
+<h2>¿Por qué elegirnos?</h2>
+
+<div class="confianza-contenedor">
+
+<div class="confianza-card">
+<i class="fa-solid fa-cake-candles"></i>
+<h4>Productos caseros</h4>
+<p>Hechos con ingredientes frescos y de calidad.</p>
+</div>
+
+<div class="confianza-card">
+<i class="fa-solid fa-handshake"></i>
+<h4>Atención personalizada</h4>
+<p>Te acompañamos en cada detalle.</p>
+</div>
+
+<div class="confianza-card">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+<h4>Diseños únicos</h4>
+<p>Cada trabajo es especial.</p>
+</div>
+
+<div class="confianza-card">
+<i class="fa-solid fa-clock"></i>
+<h4>Entregas a tiempo</h4>
+<p>Cumplimos con los tiempos.</p>
+</div>
+
+</div>
+</section>
+
+<section class="contacto" id="contacto">
+<h2>Contacto</h2>
+
+<p>📦 Consultá precios y disponibilidad</p>
+<p>💬 Respuesta rápida por WhatsApp</p>
+
+<button onclick="enviarWhatsApp()">
+Escribinos por WhatsApp
+</button>
+</section>
+
+<footer>
+<p>© 2026 Cositas Ricas</p>
+</footer>
+<a href="https://wa.me/543454962526" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<script src="js/script.js"></script>
+
+</body>
+</html>
